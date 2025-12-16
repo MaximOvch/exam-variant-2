@@ -81,15 +81,44 @@ p {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    transition: 0.3s;
 }
 
-.header-nav>a>img {
+.request-demo:hover {
+    background-color: #9C69E2;
+    color: white;
+}
+
+.request-demo svg path,
+.request-demo-footer svg path {
+    stroke: #9C69E2;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: stroke 0.3s;
+}
+
+.request-demo:hover svg path,
+.request-demo-footer:hover svg path {
+    stroke: #fff;
+}
+
+.header-nav>a>svg {
     margin-left: 20px;
 }
 
 .navigation {
     display: flex;
     gap: 40px;
+    transition: 0.3s;
+}
+
+.navigation a {
+    color: #4B5D68;
+}
+
+.navigation a:hover {
+    color: #8A40EE;
 }
 
 /* ------------------Hero------------------*/
@@ -130,6 +159,11 @@ p {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    transition: 0.3s;
+}
+
+.hero>a:hover {
+    background-color: #8A40EE;
 }
 
 h1 {
@@ -400,7 +434,7 @@ h3.social-header {
     width: 210px;
     height: 60px;
     color: white;
-    background-color: #9C69E2;
+    background-color: #F063B8;
     border-radius: 50px;
     justify-content: center;
     font-size: 18px;
@@ -408,6 +442,11 @@ h3.social-header {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    transition: 0.3s;
+}
+
+.learn-more:hover {
+    background-color: #EB4BAB;
 }
 
 .request-demo-footer {
@@ -424,9 +463,15 @@ h3.social-header {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    transition: 0.3s;
 }
 
-.request-demo-footer>img {
+.request-demo-footer:hover {
+    background-color: #9C69E2;
+    color: #ffffff;
+}
+
+.request-demo-footer>svg {
     margin-left: 20px;
 }
 
@@ -463,27 +508,47 @@ h3.social-header {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: grey;
     justify-content: center;
     align-items: center;
 }
 
-.social-links{
+.social-links {
     display: flex;
-     gap: 15px;
+    gap: 15px;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-.social-links a{
-width: inherit;
+.social-link {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(195, 194, 194);
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .icon {
-  width: 24px;
-  height: 24px;
-  fill: white;
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
 }
+
+.social-link:hover,
+.social-link:focus-visible{
+  background: #fff;
+}
+
+/* индивидуальные цвета */
+.social--fb:hover, .social--fb:focus-visible { color: #3b5998; border-color: #3b5998; }
+.social--tw:hover, .social--tw:focus-visible { color: #1da1f2; border-color: #1da1f2; }
+.social--ig:hover, .social--ig:focus-visible { color: #c13584; border-color: #c13584; }
 
 .copyright {
     width: 275px;

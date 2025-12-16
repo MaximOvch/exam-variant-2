@@ -15,6 +15,22 @@
 </head>
 
 <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+        <symbol id="icon-facebook" viewBox="0 0 10 24">
+            <path fill="currentColor"
+                d="M6.37 20.49V10.24h2.83l.38-3.53H6.37V4.95c0-.92.09-1.41 1.42-1.41h1.77V0H6.73C3.32 0 2.12 1.71 2.12 4.59v2.12H0v3.53h2.12v10.25h4.25z" />
+        </symbol>
+        <symbol id="icon-twitter" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M23.95 4.57a10 10 0 01-2.83.78 4.93 4.93 0 002.16-2.72 9.86 9.86 0 01-3.13 1.2 4.92 4.92 0 00-8.38 4.48A14 14 0 011.67 3.15a4.92 4.92 0 001.52 6.57 4.9 4.9 0 01-2.23-.62v.06a4.92 4.92 0 003.95 4.83 4.93 4.93 0 01-2.22.08 4.92 4.92 0 004.6 3.41A9.87 9.87 0 010 19.54a13.94 13.94 0 007.55 2.21c9.06 0 14-7.5 14-14v-.64a10 10 0 002.4-2.54z" />
+        </symbol>
+        <symbol id="icon-instagram" viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10z" />
+        </symbol>
+
+    </svg>
+
     <header>
         <div class="container">
             <div class="header-nav">
@@ -39,7 +55,12 @@
                 </ul>
                 <a href="" class="request-demo">
                     Request Demo
-                    <img src="images/arrow-right.svg" alt="">
+                    <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 15L21 8L15 1" stroke="#9C69E2" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M21 8H1" stroke="#9C69E2" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
                 </a>
             </div>
             <section class="hero">
@@ -168,7 +189,12 @@
                     <a href="" class="learn-more">Learn more</a>
                     <a href="" class="request-demo-footer">
                         Request Demo
-                        <img src="images/arrow-right.svg" alt="">
+                        <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 15L21 8L15 1" stroke="#9C69E2" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M21 8H1" stroke="#9C69E2" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
                     </a>
                 </div>
             </div>
@@ -227,23 +253,23 @@
                     <h3 class="social-header">Social Media</h3>
                     <ul class="social-links">
                         <li>
-                            <a href="">
+                            <a href="" class="social-link social--fb" aria-label="Facebook">
                                 <svg class="icon">
-                                    <use href="sprite.svg#icon-facebook"></use>
+                                    <use href="#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="" class="social-link social--tw" aria-label="Twitter">
                                 <svg class="icon">
-                                    <use href="sprite.svg#icon-twitter"></use>
+                                    <use href="#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="" class="social-link social--ig" aria-label="Instagram">
                                 <svg class="icon">
-                                    <use href="sprite.svg#icon-instagram"></use>
+                                    <use href="#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
